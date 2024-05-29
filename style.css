@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #bde0fe;
+    display: flex;
+    overflow: auto;
+}
+
+.sub1-container {
+    width: 75%;
+    height: 100%;
+    position: relative;
+}
+
+aside {
+    width: 25%;
+    height: 100%;
+    background-color: #a2d2ffbc;
+    padding-bottom: 5rem; 
+}
+
+.shadow {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    background-color: black;
+    opacity: 0.6;
+}
+
+.toggleEff {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 0em;
+    width: 90%;
+}
+
+.navTitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 85px;
+    background-color: #64b4f683;
+    box-shadow: 1px 0px 15px 0px grey;
+    color: #ffff;
+    font-size: 30px;
+    padding-inline: 20px 20px;
+}
+
+.navTitle h1, .memos {
+    font-weight: 600;
+    align-self: center;
+    margin: auto;
+    text-transform: capitalize;
+}
+
+.icon-bar {
+    display: none;
+}
+
+.dateTitle {
+    text-align: center;
+    margin-block: 4% 4%;
+}
+
+.date {
+    all: unset;
+    appearance: none;
+    background-color: #e8e8e8dc;
+    border-radius: 4rem;
+    text-align: center;
+    border: 2px solid grey;
+    height: 2.2rem;
+    width: 20rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333333;
+}
+
+.msgThoughts {
+    text-align: center;
+}
+
+.warning {
+    position: fixed;
+    top: 190px;
+    left: 290px;
+    background-color: #e01e38c9;
+    color: white;
+    height: 30px;
+    padding-inline: 10px 10px;
+    padding-block: 2px 5px;
+    border-radius: 5px;
+    display: none;
+}
+
+#thoughts {
+    resize: none;
+    appearance: none;
+    outline: none;
+    background-color: #e8e8e8dc;
+    height: 300px;
+    width: 40vw;
+    border-radius: 1.6rem;
+    padding: 1.5rem;
+    color: #333333;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border: 2px solid rgba(128, 128, 128, 0.727);
+    text-transform: initial;
+    word-spacing: 3px;
+}
+
+.btnDiv {
+    display: flex;
+    justify-content: center;
+    margin-block: 4% 4%;
+    flex-wrap: wrap;
+}
+
+.btn {
+    margin-inline: 3% 1%;
+    width: 6rem;
+    border-radius: 8px;
+}
+
+.memos-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    padding: 15px;
+    color: #ffff;
+}
+
+aside .memos {
+    margin: auto;
+}
+
+.icon-x {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.btn-alldlt {
+    width: 10rem;
+    position: absolute;
+    bottom: 0%;
+    margin-block: 18px;
+    right: 5%;
+}
+
+.add-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.historyList {
+    text-align: center;
+    background-color: #6daedb;
+    color: floralwhite;
+    height: 2.2rem;
+    width: 18rem;
+    border-radius: 20px;
+    border: none;
+    padding: 3px 5px 15px 5px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-block: 10px 0px;
+    cursor: pointer;
+}
